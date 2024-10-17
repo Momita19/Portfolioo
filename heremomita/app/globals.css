@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #09090909;
+}
+/* globals.css */
+.content {
+    position: relative; /* Allows content to be positioned normally */
+    opacity: 0; /* Start hidden */
+    transition: opacity 10s ease-in-out; /* Smooth transition for visibility */
+  }
+  
+  .showContent {
+    opacity: 1; /* Fully visible after curtains open */
+    z-index: 0; /* Ensure content is below curtains while they're open */
+  }
+  

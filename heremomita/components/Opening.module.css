@@ -1,0 +1,41 @@
+/* Opening.module.css */
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1; /* Ensure it is above content initially */
+}
+
+.curtainContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  transition: none; /* Remove default transition here */
+}
+
+.curtainLeft, .curtainRight {
+  width: 50vw;
+  height: 100vh;
+  background-color: #000; /* Curtain color */
+  transform: translateX(0); /* Initial position */
+  transition: transform 10s ease-in-out; /* Animation for curtain opening */
+}
+
+.curtainLeft {
+  transform: translateX(0);
+}
+
+.curtainRight {
+  transform: translateX(0);
+}
+
+.open .curtainLeft {
+  transform: translateX(-100%); /* Move left curtain out */
+}
+
+.open .curtainRight {
+  transform: translateX(100%); /* Move right curtain out */
+}
