@@ -3,9 +3,10 @@ import React from 'react'
 const Body = () => {
   return (
     <div>
-      hi
+      hi hellllllllllllo
     </div>
   )
 }
+
 
 export default Body
